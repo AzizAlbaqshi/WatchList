@@ -1,15 +1,19 @@
 import React from 'react';
+import WatchItem from './WatchItem';
 
-const WatchList = () => {
+const WatchList = (props) => {
+    const movies = props.movies.map(movie => (<WatchItem movie={movie}/>))
+
     return (
         <div>
-            <ul className="list-group watchList">
-                <li className="list-group-item">An item</li>
-                <li className="list-group-item">A second item</li>
-                <li className="list-group-item">A third item</li>
-                <li className="list-group-item">A fourth item</li>
-                <li className="list-group-item">And a fifth one</li>
+        <div className="watchList">
+            <input />
+            <ul className="list-group">
+                {movies}
             </ul>
+        </div>
+            
+
         </div>
     );
 };

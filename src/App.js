@@ -1,10 +1,11 @@
 import './App.css';
 import WatchList from './components/WatchList';
+import movies from "./movies.js";
 
 function App() {
   return (
     <div>
-      <WatchList />
+      <WatchList movies={movies}/>
       
     </div>
   )
