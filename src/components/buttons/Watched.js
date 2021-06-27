@@ -1,9 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Watched = () => {
-    return (
-        <button>Watched</button>  
-    );
+  return <button>Watched</button>;
 };
 
 export default Watched;

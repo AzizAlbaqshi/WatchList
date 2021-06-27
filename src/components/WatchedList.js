@@ -1,7 +1,6 @@
-import React from "react";
 import WatchItem from "./WatchItem";
 
-const WatchList = (props) => {
+const WatchedList = (props) => {
   const movies = props.movies.map((movie) => <WatchItem movie={movie.title} />);
 
   return (
@@ -14,4 +13,4 @@ const WatchList = (props) => {
   );
 };
 
-export default WatchList;
+export default WatchedList;

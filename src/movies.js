@@ -1,13 +1,16 @@
 const movies = [
-    "Inception", 
-    "Interstellar", 
-    "Good Will Hunting", 
-    "The Prestige", 
-    "A Quiet Place", 
-    "The Pursuit of Happyness", 
-    "Tenet", 
-    "A Separation"
+  { title: "Inception", watched: false },
 
+  { title: "Interstellar", watched: false },
+
+  { title: "Good Will Hunting", watched: false },
+
+  { title: "The Prestige", watched: true },
+
+  { title: "The Pursuit of Happyness", watched: false },
+  { title: "Tenet", watched: false },
+
+  { title: "A Separation", watched: true },
 ];
-  
-  export default movies;
+
+export default movies;
