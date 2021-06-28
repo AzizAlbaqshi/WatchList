@@ -1,13 +1,15 @@
 import React from 'react';
-import Watched from "./buttons/Watched.js";
-import Delete from "./buttons/Delete.js";
+import WatchButton from "./buttons/WatchButton.js";
+import DeleteButton from "./buttons/DeleteButton.js";
 
 const WatchItem = (props) => {
+    const movie = props.movie
+
     return (
         <li className="list-group-item">
-            {props.movie}
-            <Watched />
-            <Delete />
+            {movie.title}
+            <WatchButton watched={movie.watched}/>
+            <DeleteButton movieID={movie.id}/>
         </li>
     );
 };
