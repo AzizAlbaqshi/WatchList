@@ -1,6 +1,7 @@
 import React from 'react';
 import WatchButton from "./buttons/WatchButton.js";
 import DeleteButton from "./buttons/DeleteButton.js";
+import { observer } from "mobx-react";
 
 const WatchItem = (props) => {
     const movie = props.movie
@@ -8,10 +9,10 @@ const WatchItem = (props) => {
     return (
         <li className="list-group-item">
             {movie.title}
-            <WatchButton watched={movie.watched}/>
-            <DeleteButton movieID={movie.id}/>
+            <WatchButton movie={movie} />
+            <DeleteButton movieID={movie.id} />
         </li>
     );
 };
 
-export default WatchItem;
+export default observer(WatchItem);

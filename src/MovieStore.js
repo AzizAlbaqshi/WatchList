@@ -18,6 +18,11 @@ class MovieStore {
         this.movies.push(newMovie);
     }
 
+    setWatched = (movieID) => {
+        const movie = this.movies.find(movie => movie.id === movieID);
+        movie.watched = !movie.watched;
+    }
+
 }
 
 const movieStore = new MovieStore();
